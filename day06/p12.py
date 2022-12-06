@@ -2,7 +2,7 @@ from puzzle_input import STRINGS
 
 
 def get_idx(msg, ln):
-    return next(i for i in range(len(msg)) if len(set((list(msg[i:i + ln])))) == ln) + ln
+    return next(i for i in range(len(msg)) if len(set(list(msg[i:i + ln]))) == ln) + ln
 
 
 for msg in STRINGS:
